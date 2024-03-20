@@ -1,11 +1,11 @@
 # CSC 59866 - Senior Design I
-American Dream's Senior Design Project Idea Propsoal 
+American Dream's Senior Design Project Idea Proposal 
 
 # Team Members
-Martin Lahoumh: https://github.com/MartinLahoumh - Leader <br>
-Brandon Tjandra: https://github.com/btjandra15 - Techsmith <br>
-Miguel Luna: https://github.com/luna-miguel - Systems Savy <br>
-Jiazhou Zhang: https://github.com/Jiazhou-Zhang - Quality Assurance <br>
+[Martin Lahoumh](https://github.com/MartinLahoumh) - Leader <br>
+[Brandon Tjandra](https://github.com/btjandra15) - Techsmith <br>
+[Miguel Luna](https://github.com/luna-miguel) - Systems Savy <br>
+[Jiazhou Zhang](https://github.com/Jiazhou-Zhang) - Quality Assurance <br>
 # Idea
 * An AR application that will take photos of objects near you and using a model (such as YOLACT++ or MASK_RCNN) will be able to detect what the object is and tell the user about it. Data will be taken from the COCO dataset
 
@@ -22,7 +22,15 @@ The second stage predicts a bounding box and object class for the proposed regio
 The third stage takes the output from the RolAlign layer and feeds it into a Mask head (this contains two convolutional layers). This will generate the mask for each region, thus segmenting the image.  
 Sometimes, the model is not so good at segmenting over irregular boundaries. A way to fix this is by using a point-based rendering neural network called PointRend. It is added onto Mask R-CNN, to turn it on all you have to do is set it to true.  
 
-![Mask R-CNN](http://url/to/img.png)
+![Mask R-CNN](https://github.com/MartinLahoumh/SeniorDesign/blob/main/figures-62c2b491e34d48788f78458f7507f1ee-scis-2019-866-t1.png)
+Figure 1
+
+(a) Image preprocessing and feature extraction.
+
+(b) Convolutional layer based on the attention mechanism and output layer that consists of a generalized mean pooling [17]and a fully connected layer whose size is 1; the intersections of the feature extractors' output are connected through stacking. The feature extractor in (b) is the operation in (a). C, T, and X
+represent convolutional features obtained from the input images for the preprocessing of color, texture, and the original image, respectively. The figure shows the best CNN models (AR-CNN3), which have three attention layers in this model. This trained network has two losses, a ranking loss, and a softmax loss for predicting the pairwise comparisons of urban appearance. We experiment with AlexNet, PlacesNet, and VGGNet, which correspond to the feature extractor in this figure. 
+
+Source: https://www.sciengine.com/SCIS/doi/10.1007/s11432-019-2899-9;JSESSIONID=923bcc0e-4d2a-4d47-82f7-6ec88a2ed98f
 
 ## How Does Augmented Reality Work?  
 Link: https://hbr.org/2017/11/how-does-augmented-reality-work  
