@@ -22,7 +22,7 @@ The second stage predicts a bounding box and object class for the proposed regio
 The third stage takes the output from the RolAlign layer and feeds it into a Mask head (this contains two convolutional layers). This will generate the mask for each region, thus segmenting the image.  
 Sometimes, the model is not so good at segmenting over irregular boundaries. A way to fix this is by using a point-based rendering neural network called PointRend. It is added onto Mask R-CNN, to turn it on all you have to do is set it to true.  
 
-![Mask R-CNN](https://github.com/MartinLahoumh/SeniorDesign/blob/main/figures-62c2b491e34d48788f78458f7507f1ee-scis-2019-866-t1.png)
+![Mask R-CNN](https://github.com/MartinLahoumh/SeniorDesign/blob/main/figure1.png)
 Figure 1
 
 (a) Image preprocessing and feature extraction.
