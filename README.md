@@ -69,6 +69,21 @@ In education, AI and AR technologies offer immersive learning experiences throug
 Furthermore, AI-powered AR enhances practical experiences by providing real-time guidance and information overlays in various scenarios, such as navigating crowded venues or exploring unfamiliar cities.
 
 Overall, the article advocates for the synergistic potential of AI and AR technologies to foster greater understanding, communication, and collaboration across different domains and cultures. It suggests that as these technologies continue to evolve, they will play an increasingly significant role in bringing people together and enriching human experiences.
+
+## Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect
+Link: https://www.sciencedirect.com/science/article/abs/pii/S0360835220303193
+ 
+Summary:
+This article proposes a mobile AR utility that assists users with tasks such as object identification using spatial mapping. It takes and uses RGB-D based images, which provides useful view-dependent and region-of-interest data. It then passes them into a Mask R-CNN in order to detect instances of objects and their space. Lastly, a 3D point cloud is taken from the image in tandem with an iterative closest point (ICP) algorithm to achieve 3D spatial mapping, to which augmented reality assistance can be applied.The authors used three experiments to evaluate their proposal. 
+
+In the first experiment, they compared their AR spatial mapping system to a more typical one that uses AR markers in order to identify objects. They found that the assistance using AR markers failed when the object was obstructed or otherwise failed to be identified, unlike theirs that uses spatial mapping.
+
+In the second experiment, they created a digital model of an object in a certain environment, and compared the machine learning model’s accuracy in recreating the object with the same angle and size, with the image taken in several different distances. It produced low error in distances within 1 and 2 meters, but produced larger inaccuracies at 3 meters.
+
+In the third experiment, they measured user accessibility by instructing users to “calibrate” a system with both their spatial mapping system and the AR marker system, using a mobile camera to line up a green dot on the screen with a red dot virtually drawn onto an object. They found that AR markers were less reliable due to recognition failure from size or tracking of the marker, something which spatial mapping does not suffer from. In addition, the users they surveyed stated that the spatial mapping method was easier to use and understand than the AR marker method.
+
+The authors describe two applications of this technology: one provides an AR, 3D tutorial that assists users in repairing and/or assembling an apparatus, and one that allows users to interact with a physical robot and surrounding objects from the device and camera. These two were once again tested using both AR markers and spatial mapping and surveyed to a test group. In both experiments, the spatial mapping AR app was more effective in usability and mental load (once instructions were provided to users).
+
 	
 
 
