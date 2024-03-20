@@ -1,10 +1,10 @@
-# SeniorDesign
+# American Dream
 Our team senior design project 
 # Team Members
-Martin Lahoumh - Leader <br>
-Brandon Tjandra - Techsmith <br>
-Miguel Luna - Systems Savy <br>
-Jiazhou Zhang - Quality Assurance <br>
+Martin Lahoumh: https://github.com/MartinLahoumh - Leader <br>
+Brandon Tjandra: https://github.com/btjandra15 - Techsmith <br>
+Miguel Luna: https://github.com/luna-miguel - Systems Savy <br>
+Jiazhou Zhang: https://github.com/Jiazhou-Zhang - Quality Assurance <br>
 # Idea
 * An AR application that will take photos of objects near you and using a model (such as YOLACT++ or MASK_RCNN) will be able to detect what the object is and tell the user about it. Data will be taken from the COCO dataset
 
