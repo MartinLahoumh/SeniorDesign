@@ -84,6 +84,37 @@ In the third experiment, they measured user accessibility by instructing users t
 
 The authors describe two applications of this technology: one provides an AR, 3D tutorial that assists users in repairing and/or assembling an apparatus, and one that allows users to interact with a physical robot and surrounding objects from the device and camera. These two were once again tested using both AR markers and spatial mapping and surveyed to a test group. In both experiments, the spatial mapping AR app was more effective in usability and mental load (once instructions were provided to users).
 
+# Dataset
+## Data acquisition method
+
+1. Gather images of information signs, posters, TV screens, etc. that contain text
+2. Either take picture or design image of sign manually, or generate image of sign using a generative AI (may produce bad data without verification: intelligible text, for example)
+3. Either manually or with the use of a machine learning model (OCR: optical character recognition), locate and extract the necessary attributes, which may include:
+* The image itself
+* The text within the image
+* The coordinates of the poster and/or text in the image
+* Supplemental elements, such as QR codes, URLs, email addresses, dates & times, alt-text 
+* Other contextual objects recognizable in the background of the image
+4. Store entry in the dataset as a tuple containing these attributes
+
+## Data acquisition example
+
+![Dataset example](https://github.com/MartinLahoumh/SeniorDesign/blob/main/dataset.png)
+
+## Datasets used for existing projects
+
+## COCO dataset (Common Objects in Context):
+* Used in the following project: Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect
+* Dataset for object recognition (determining what the objects are) and segmentation (determining where the objects are in the image)
+* Each entry contains an image, the segmentation results, the identified items, and 5 captions describing the objects in context to the image’s scenario
+
+## Self obtained images:
+* Used in the following project: AR-based deep learning for real-time inspection of cable brackets in aircraft - ScienceDirect
+* Images, which were taken by the authors, of various types of cable bracket installations on airplanes, all with the exact same dimensions
+* Some images have various degrees of quality such as obstructing cable ties, different lighting, or being too indistinguishable from the background. These images were labeled using an image annotation tool called LabelMe 
+* 400 images obtained for training dataset, 100 images obtained for testing dataset, 100 images obtained for validation dataset
+
+
 	
 
 
