@@ -7,7 +7,7 @@ American Dream's Senior Design Project Idea Proposal
 [Miguel Luna](https://github.com/luna-miguel) - Systems Savy <br>
 [Jiazhou Zhang](https://github.com/Jiazhou-Zhang) - Quality Assurance <br>
 # Idea
-* An AR application that will take photos of objects near you and using a model (such as YOLACT++ or MASK_RCNN) will be able to detect what the object is and tell the user about it. Data will be taken from the COCO dataset
+* An AR application that will take photos of objects with text in them (such as a street sign) and would be able to translate it to a users prefered langauge in real time. We will use the Mask R-CNN model for the object detection.
 
 # Research
 ## How Does AR and Mask-RCNN work?
