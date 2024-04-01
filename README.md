@@ -104,12 +104,12 @@ The authors describe two applications of this technology: one provides an AR, 3D
 ## Datasets used for existing projects
 
 ## COCO dataset (Common Objects in Context):
-* Used in the following project: Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect
+* Used in the following project: Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0360835220303193#bb0160)
 * Dataset for object recognition (determining what the objects are) and segmentation (determining where the objects are in the image)
 * Each entry contains an image, the segmentation results, the identified items, and 5 captions describing the objects in context to the image’s scenario
 
 ## Self obtained images:
-* Used in the following project: AR-based deep learning for real-time inspection of cable brackets in aircraft - ScienceDirect
+* Used in the following project: AR-based deep learning for real-time inspection of cable brackets in aircraft - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0736584523000509)
 * Images, which were taken by the authors, of various types of cable bracket installations on airplanes, all with the exact same dimensions
 * Some images have various degrees of quality such as obstructing cable ties, different lighting, or being too indistinguishable from the background. These images were labeled using an image annotation tool called LabelMe 
 * 400 images obtained for training dataset, 100 images obtained for testing dataset, 100 images obtained for validation dataset
