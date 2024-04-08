@@ -114,9 +114,11 @@ The authors describe two applications of this technology: one provides an AR, 3D
 * Some images have various degrees of quality such as obstructing cable ties, different lighting, or being too indistinguishable from the background. These images were labeled using an image annotation tool called LabelMe 
 * 400 images obtained for training dataset, 100 images obtained for testing dataset, 100 images obtained for validation dataset
 
-
-	
-
+## Curve Text (CUTE80):
+* Used in the following project: A robust arbitrary text detection system for natural scene images - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0957417414004060)
+* It features complex backgrounds, perspective distortion effects, and poor resolution effects, with text arranged in circular, S-shaped, and Z-shaped formations.
+* The dataset includes images captured indoors and outdoors, using digital cameras or retrieved from the internet.
+* Consists of 80 curved text line images with complex background, perspective distortion effect and poor resolution effect
 
 
 
