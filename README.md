@@ -97,6 +97,10 @@ Overall, the article advocates for the synergistic potential of AI and AR techno
 * The dataset includes images captured indoors and outdoors, using digital cameras or retrieved from the internet.
 * Consists of 80 curved text line images with complex background, perspective distortion effect and poor resolution effect
 
+| Source | Image Number | Image Size | Date Published |
+| --- | --- |--- |---|
+| CUTE80 |    80    |  Varies  | 2014|
+
 
 
 
