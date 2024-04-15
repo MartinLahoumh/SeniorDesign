@@ -6,11 +6,13 @@ American Dream's Senior Design Project Idea Proposal
 [Brandon Tjandra](https://github.com/btjandra15) - Techsmith <br>
 [Miguel Luna](https://github.com/luna-miguel) - Systems Savy <br>
 [Jiazhou Zhang](https://github.com/Jiazhou-Zhang) - Quality Assurance <br>
-# Idea
-* An AR application that will take photos of objects with text in them (such as a street sign) and would be able to translate it to a users prefered langauge in real time. We will use the Mask R-CNN model for the object detection.
+
+# Project Idea
+* The idea of this project is a web app that translates text that are on images (such as a poster or a sign or even just a regular digital image) to a users prefered language (I.E French, Spanish, English, etc.) 
+* The ML aspect of this project is detecting where in an image is text located, to which that text is extracted.
+* The extracted text will be translated via an API of google translate, to which it would return that translation to the user. 
 
 # Research
-## How Does AR and Mask-RCNN work?
 ### How Mask R-CNN Works?
 Link: https://developers.arcgis.com/python/guide/how-maskrcnn-works/  
 
@@ -32,27 +34,17 @@ represent convolutional features obtained from the input images for the preproce
 
 Source: https://www.sciengine.com/SCIS/doi/10.1007/s11432-019-2899-9;JSESSIONID=923bcc0e-4d2a-4d47-82f7-6ec88a2ed98f
 
-## How Does Augmented Reality Work?  
-Link: https://hbr.org/2017/11/how-does-augmented-reality-work  
+## Translating the text of images
 
-Summary:  
-In most basic terms, augmented reality (AR) uses some sort of device that contains a camera, in which a user can point at a real-world object, and the AR software will recognize that object can overlay some sort of computerized object in proportion to that object.  
-The different commands and objects presented in AR is downloaded from the cloud, much like how a web browser loads a page through a URL. The biggest benefit of having AR is the ease of use for all types of people. A user might touch a stop button to stop a video from playing, or can simply use their voice. Either command gets sent to the cloud to a product.  
-Keeping proportion in AR is important. As someone moves away from an object, the size and orientation of the AR display must adjust with the user as it would if the object was really there. For example, moving back from an object should actually feel as if the user is seeing the object get smaller and out of view.  
-In the cloud, there is a 3D digital model that serves as the link between a users device and AR. This is a model that is created by digitizing physical objects. This digital model will then collect information from that real-world product, its business systems, and external sources to reflect the product's current reality.
+Link: https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice.
 
-## Artificial Intelligence and Augmented Reality
+Summary: Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo, to which it applies an OCR to convert the phtot before translating. 
 
-Link: https://digitalreality.ieee.org/publications/artificial-intelligence-and-augmented-reality
+## Text Detection, Recognition and Translation 
 
-Summary:
-Artificial intelligence and augmented reality are two new concepts facing popularity with rapidly advancing technology allowing them to develop. They both face two major constraints currently: artificial intelligence being limited to capabilities of the current processing power, and augmented reality being limited to technological capabilities of their physical formats, but are on their way to reaching greater potentials.
+Link: https://medium.com/analytics-vidhya/scene-text-detection-recognition-and-translation-ad20c31e869e
 
-The main three ways that augmented or virtual reality and machine learning interact with each other is positional tracking, speech recognition, and object recognition. There are many complex combinations of the two, but the main idea is to combine human ability to process large amounts of visual data and machine ability to process large amounts of raw data.
-
-Real world applications of augmented reality working with machine learning range from serious to entertainment purposes. These include using mixed reality to train employees more efficiently in specially crafted environments, using virtual AI chatbots, and using face filters on social media.
-
-Artificial intelligence and augmented reality are different in their challenges. Artificial intelligence has issues of bias, and ethical issues due to training data obtainment and accountability. Augmented reality also faces issues of ethics due to digital rights management, but is also subject to accessibility, user experience, and other sorts of engineering concerns.
+Summary: Discusses text detection in real time videos. Gives off datasets that may be helpful for text that is slanted and not perfectly readable, which is ICDAR 2015 and 2013. It also gives off good recomendations for models used for detection and recognition.
 
 ## How does Augmented Reality and Artificial Intelligence connected?
 Link: https://www.dataversity.net/a-tale-of-two-technologies-how-ai-and-ar-tech-are-changing-our-world
@@ -108,11 +100,17 @@ The authors describe two applications of this technology: one provides an AR, 3D
 * Dataset for object recognition (determining what the objects are) and segmentation (determining where the objects are in the image)
 * Each entry contains an image, the segmentation results, the identified items, and 5 captions describing the objects in context to the image’s scenario
 
-## Self obtained images:
-* Used in the following project: AR-based deep learning for real-time inspection of cable brackets in aircraft - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0736584523000509)
-* Images, which were taken by the authors, of various types of cable bracket installations on airplanes, all with the exact same dimensions
-* Some images have various degrees of quality such as obstructing cable ties, different lighting, or being too indistinguishable from the background. These images were labeled using an image annotation tool called LabelMe 
-* 400 images obtained for training dataset, 100 images obtained for testing dataset, 100 images obtained for validation dataset
+## TextOCR
+* Performs text-recognition on arbitirary shaped scene-text on natural images (i.e a picture, poster, sign, etc.)
+* Contains over 1M high quality word annotations on images
+
+## ICDAR 2015
+* Used for oriented scene text detection and spotting
+* Contains 1000 training images
+
+## ICDAR 2013
+* contain 229 training images
+* Horizontal text only
 
 ## Curve Text (CUTE80):
 * Used in the following project: A robust arbitrary text detection system for natural scene images - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0957417414004060)
