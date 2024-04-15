@@ -77,19 +77,6 @@ In the third experiment, they measured user accessibility by instructing users t
 The authors describe two applications of this technology: one provides an AR, 3D tutorial that assists users in repairing and/or assembling an apparatus, and one that allows users to interact with a physical robot and surrounding objects from the device and camera. These two were once again tested using both AR markers and spatial mapping and surveyed to a test group. In both experiments, the spatial mapping AR app was more effective in usability and mental load (once instructions were provided to users).
 
 # Dataset
-## Data acquisition method
-
-1. Gather images of information signs, posters, TV screens, etc. that contain text
-2. Either take picture or design image of sign manually, or generate image of sign using a generative AI (may produce bad data without verification: intelligible text, for example)
-3. Either manually or with the use of a machine learning model (OCR: optical character recognition), locate and extract the necessary attributes, which may include:
-* The image itself
-* The text within the image
-* The coordinates of the poster and/or text in the image
-* Supplemental elements, such as QR codes, URLs, email addresses, dates & times, alt-text 
-* Other contextual objects recognizable in the background of the image
-4. Store entry in the dataset as a tuple containing these attributes
-
-
 ## Datasets used for existing projects
 
 ## COCO dataset (Common Objects in Context):
