@@ -38,7 +38,7 @@ Source: https://www.sciengine.com/SCIS/doi/10.1007/s11432-019-2899-9;JSESSIONID=
 
 Link: https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice.
 
-Summary: Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo, to which it applies an OCR to convert the phtot before translating. 
+Summary: Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo. It splits the image into different segments and analyzes it part by part. In analysis, it applies an OCR to convert the photo before translating. OCR extracts text from an image and automatically translates that text. It is a popular tool used in Google Translates, Microsoft Translator, Text Fairy, Scan & Translate (Apple), and Prizmo.
 
 ## Text Detection, Recognition and Translation 
 
