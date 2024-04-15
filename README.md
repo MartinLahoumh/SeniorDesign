@@ -13,6 +13,9 @@ American Dream's Senior Design Project Idea Proposal
 * The extracted text will be translated via an API of google translate, to which it would return that translation to the user. 
 
 # Research
+| Source | Image Number | Image Size | Date Published |
+| --- | --- |--- |---|
+| CUTE80 |    80    |  Varies  | 2014|
 ### How Mask R-CNN Works?
 Link: https://developers.arcgis.com/python/guide/how-maskrcnn-works/  
 
