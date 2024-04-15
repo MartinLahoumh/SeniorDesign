@@ -89,9 +89,6 @@ The authors describe two applications of this technology: one provides an AR, 3D
 * Other contextual objects recognizable in the background of the image
 4. Store entry in the dataset as a tuple containing these attributes
 
-## Data acquisition example
-
-![Dataset example](https://github.com/MartinLahoumh/SeniorDesign/blob/main/dataset.png)
 
 ## Datasets used for existing projects
 
