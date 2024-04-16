@@ -1,86 +1,42 @@
-# CSC 59866 - Senior Design I
-American Dream's Senior Design Project Idea Proposal 
+# CSC 59866 - Senior Design I <br> American Dream
 
 # Team Members
-[Martin Lahoumh](https://github.com/MartinLahoumh) - Leader <br>
-[Brandon Tjandra](https://github.com/btjandra15) - Techsmith <br>
-[Miguel Luna](https://github.com/luna-miguel) - Systems Savy <br>
-[Jiazhou Zhang](https://github.com/Jiazhou-Zhang) - Quality Assurance <br>
+| Name | Role | GitHub link |
+| - | - | - |
+| Martin Lahoumh | Leader | https://github.com/MartinLahoumh |
+| Brandon Tjandra | Techsmith | https://github.com/btjandra15 |
+| Miguel Luna | Systems Savvy | https://github.com/luna-miguel |
+| Jiazhou Zhang | Quality Assurance | https://github.com/Jiazhou-Zhang |
 
 # Project Idea
-* The idea of this project is a web app that translates text that are on images (such as a poster or a sign or even just a regular digital image) to a users prefered language (I.E French, Spanish, English, etc.) 
-* The ML aspect of this project is detecting where in an image is text located, to which that text is extracted.
-* The extracted text will be translated via an API of google translate, to which it would return that translation to the user. 
+The goal of this project is to create a web application that takes an image supplied by the user that contains English text (such as a poster or a sign or even just a regular digital image), extracts the text, and translates it to a user's preferred language (i.e. French, Spanish, Chinese, etc.) 
+* The machine learning aspect of this project is detecting where in an image is text located, to which that text is extracted.
+* The extracted text will be translated via an API of Google Translate, to which it would return that translation to the user. 
 
 # Research
-| Source | Link | Summary | Relevance |
-| --- | --- |--- |---|
-| How Mask R-CNN Works |   https://developers.arcgis.com/python/guide/how-maskrcnn-works/   |  Object instance segmentation integrates the task of object detection (detect an object along a specified bounding pox) and the task of segmentation, which classifies each pixel into a pre-defined category and creates a mask for parts of the given image to highlight specific features of it. Mask-RCNN is a popular model that is used for instance segmentation. In Mask-RCNN a proposal is made, to which a bounding box is made for that proposal, to which a mask for each region proposal is made.   | Mask-RCNN is a potential model that we can use for our project. We can use it to detect where in an image is text located.|
-| Translating the Test of Images |   [https://developers.arcgis.com/python/guide/how-maskrcnn-works/](https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice)   |  Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo. It splits the image into different segments and analyzes it part by part. In analysis, it applies an OCR to convert the photo before translating. OCR extracts text from an image and automatically translates that text. It is a popular tool used in Google Translates, Microsoft Translator, Text Fairy, Scan & Translate (Apple), and Prizmo.   | Mask-RCNN is a potential model that we can use for our project. We can use it to detect where in an image is text located.|
-| Text Detection, Recognition and Translation  |   https://medium.com/analytics-vidhya/scene-text-detection-recognition-and-translation-ad20c31e869e  |  Discusses text detection in real time videos. Gives off datasets that may be helpful for text that is slanted and not perfectly readable, which is ICDAR 2015 and 2013. It also gives off good recomendations for models used for detection and recognition.   | Mask-RCNN is a potential model that we can use for our project. We can use it to detect where in an image is text located.|
 
-## How does Augmented Reality and Artificial Intelligence connected?
-Link: https://www.dataversity.net/a-tale-of-two-technologies-how-ai-and-ar-tech-are-changing-our-world
+| Article | Summary | How it helps us |
+| - | - | - |
+| [How Mask R-CNN Works?](https://developers.arcgis.com/python/guide/how-maskrcnn-works/) | Mask R-CNN is an R-CNN (A region-based convolutional neural network) model for instance segmentation. Object instance segmentation integrates the task of object detection (detect an object along a specified bounding pox) and the task of segmentation, which classifies each pixel into a pre-defined category and creates a mask for parts of the given image to highlight specific features of it. | Mask R-CNN is the machine learning model we are interested in using for this project to find and detect text in images. |
+| [Translating the text of images](https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice.) | Discusses the way photo translation works on most existing software. For example, Google Translate uses image segmentation to separate the text from the image in a photo. It splits the image into different segments and analyzes it part by part. In analysis, it applies an OCR to convert the photo before translating. OCR extracts text from an image and automatically translates that text. It is a popular tool used in Google Translates, Microsoft Translator, Text Fairy, Scan & Translate (Apple), and Prizmo. | This is the technology we will be attempting to use in order to translate text in our project. |
+|[Text Detection, Recognition and Translation](https://medium.com/analytics-vidhya/scene-text-detection-recognition-and-translation-ad20c31e869e) | Provides a general overview of how machine learning can be used to detect text in images and videos in real time. It discusses challenges in the process, examples of datasets and models, and analysis of accuracy. | This article provides datasets that may be helpful for text that is slanted and not perfectly readable. It also gives off good recomendations for models used for detection and recognition. |
 
-Summary: 
-The article discusses the convergence of artificial intelligence (AI) and augmented reality (AR) technologies, highlighting their potential to revolutionize various aspects of human interaction and understanding. Firstly, it explains that AI, particularly generative AI, has reached a stage where it can mimic human thought and creativity, offering significant advancements in tasks such as language translation, data processing, and idea generation. These capabilities, when combined with AR, enable new forms of communication and collaboration previously unattainable.
+# Existing projects
 
-One major application discussed is the enhancement of communication, where AI-powered AR facilitates real-time language translation during conversations. This allows people speaking different languages to communicate seamlessly, both in casual and professional settings, enhancing global collaboration and breaking down language barriers.
-
-Moreover, in business environments, AI-enhanced AR tools enable remote teams to engage in virtual meetings with lifelike avatars, fostering active collaboration and creativity through interactive virtual whiteboards.
-The article also emphasizes the accessibility benefits of AI-driven AR, particularly for individuals with communication disabilities or those visiting foreign countries. It highlights how AR overlays can assist individuals with hearing impairments by providing faster and easier access to spoken dialogue.
-
-In education, AI and AR technologies offer immersive learning experiences through visualizations of complex subjects, such as scientific processes and anatomical models. Similarly, in entertainment, AR allows for the creation of interactive worlds and characters with unprecedented ease and speed.
-Furthermore, AI-powered AR enhances practical experiences by providing real-time guidance and information overlays in various scenarios, such as navigating crowded venues or exploring unfamiliar cities.
-
-Overall, the article advocates for the synergistic potential of AI and AR technologies to foster greater understanding, communication, and collaboration across different domains and cultures. It suggests that as these technologies continue to evolve, they will play an increasingly significant role in bringing people together and enriching human experiences.
-
-# Existing projects:
-## Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect 
-* Link: (https://www.sciencedirect.com/science/article/pii/S0360835220303193#bb0160)
-* This article proposes a mobile AR utility that assists users with tasks such as object identification using spatial mapping. It takes and uses RGB-D based images, which provides useful view-dependent and region-of-interest data. It then passes them into a Mask R-CNN in order to detect instances of objects and their space. Lastly, a 3D point cloud is taken from the image in tandem with an iterative closest point (ICP) algorithm to achieve 3D spatial mapping, to which augmented reality assistance can be applied.The authors used three experiments to evaluate their proposal.
-
-## A robust arbitrary text detection system for natural scene images - ScienceDirect
-* Link: (https://www.sciencedirect.com/science/article/abs/pii/S0957417414004060)
-* This project proposes a machine learning model that is able to identify any sort of text in a supplied image regardless of any sort of transformation, such as rotation, shear, twist, etc.
-
-# Dataset
-## Datasets used for existing projects
-
-## COCO dataset (Common Objects in Context):
-* Used in the following project: Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data - ScienceDirect (https://www.sciencedirect.com/science/article/pii/S0360835220303193#bb0160)
-* Dataset for object recognition (determining what the objects are) and segmentation (determining where the objects are in the image)
-* Each entry contains an image, the segmentation results, the identified items, and 5 captions describing the objects in context to the image’s scenario
-
-## TextOCR
-* Performs text-recognition on arbitirary shaped scene-text on natural images (i.e a picture, poster, sign, etc.)
-* Contains over 1M high quality word annotations on images
-
-## ICDAR 2015
-* Used for oriented scene text detection and spotting
-* Contains 1000 training images
-
-## ICDAR 2013
-* contain 229 training images
-* Horizontal text only
-
-## Curve Text (CUTE80):
-* Used in the following project: A robust arbitrary text detection system for natural scene images - ScienceDirect (https://www.sciencedirect.com/science/article/abs/pii/S0957417414004060)
-* It features complex backgrounds, perspective distortion effects, and poor resolution effects, with text arranged in circular, S-shaped, and Z-shaped formations.
-* The dataset includes images captured indoors and outdoors, using digital cameras or retrieved from the internet.
-* Consists of 80 curved text line images with complex background, perspective distortion effect and poor resolution effect
-
-| Source | Image Number | Image Size | Date Published |
-| --- | --- |--- |---|
-| CUTE80 |    80    |  Varies  | 2014|
+| Name | Description | Date published | Takeaways for our project |
+| - | - | - | - |
+| [Deep learning-based mobile augmented reality for task assistance using 3D spatial mapping and snapshot-based RGB-D data](https://www.sciencedirect.com/science/article/pii/S0360835220303193#bb0160) | This article proposes a mobile AR utility that identifies objects in the camera and provides or assists users with tasks relating to them, such as how to assemble or disassemble an object or operate machinery wirelessly.  | August 2020 | - |
+| [A robust arbitrary text detection system for natural scene images](https://www.sciencedirect.com/science/article/abs/pii/S0957417414004060) | This project proposes a machine learning model that is able to identify any sort of text in a supplied image regardless of any sort of transformation, such as rotation, shear, twist, etc. | December 2014 | - |
 
 
+# Datasets
 
-
-
-
-
-
-
-
-
+| Name | Description | Number of entries | Entry format | Date published | 
+| - | - | - | - | - |
+| [COCO](https://cocodataset.org/#home) | Object detection, segmentation, and captioning dataset | 330K images, >200K labeled | <details> <summary>`info`</summary> <br> `{"year", "version", "description", "contributor", "url", "date_created"}` </details> <details> <summary>`imgs`</summary> <br> `{"id", "width", "height", "filename", "license", "flickr_url", "coco_url", "date_captured"}` </details> <details> <summary>`anns`</summary>  `{"id", "image_id", "category_id", "segmentation", "area", "bbox", "iscrowd"}` </details>| 2014 - 2017 |
+| [COCO-Text](https://bgshih.github.io/cocotext/) | Large scale dataset for text detection and recognition in natural images | 63,686 images, 145,859 text instances | - | 2018 |
+| [TextOCR](https://textvqa.org/textocr/) | Text-recognition on arbitrary shaped scene-text present on natural images | 28,134 images and 903,069 annotated words | <details> <summary>`imgs`</summary> `{"id", "width", "height", "set", "filename"}` </details> <details> <summary>`anns`</summary> ` {"id", "image_id", "bbox", "points", "utf8_string", "area"}` </details> | 2014 - 2021 |
+| [ICDAR 2019](https://rrc.cvc.uab.es/?ch=15&com=introduction) | Used for a oriented scene text detection and spotting challenge | 20,000 images containing ten different languages | - | 2019 |
+| [Curve Text (CUTE80)](https://github.com/Yuliang-Liu/Curve-Text-Detector) | The first public curved text dataset, images contain text with complex transformations and obstructions | 80 images, labelled via XML sheet | `{imageName, polygonPoints}` | 2014 |
+| [Total-Text](https://github.com/cs-chan/Total-Text-Dataset?tab=readme-ov-file) | Word-level based English curve text dataset, built on top of CUTE80 | - | - | 2017 - 2022 | 
+| [SCUT-CTW1500](https://github.com/Yuliang-Liu/Curve-Text-Detector/tree/master/data) | Text-line based dataset with both English and Chinese instances | 1,500 images, labelled via .txt file | - | 2017 - 2020 |
