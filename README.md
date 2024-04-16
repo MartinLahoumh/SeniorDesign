@@ -14,6 +14,7 @@ The goal of this project is to create a web application that takes an image supp
 * The extracted text will be translated via an API of Google Translate, to which it would return that translation to the user. 
 
 # Research
+
 | Article | Summary | How it helps us |
 | - | - | - |
 | [How Mask R-CNN Works?](https://developers.arcgis.com/python/guide/how-maskrcnn-works/) | Mask R-CNN is an R-CNN (A region-based convolutional neural network) model for instance segmentation. Object instance segmentation integrates the task of object detection (detect an object along a specified bounding pox) and the task of segmentation, which classifies each pixel into a pre-defined category and creates a mask for parts of the given image to highlight specific features of it. | Mask R-CNN is the machine learning model we are interested in using for this project to find and detect text in images. |
@@ -39,14 +40,3 @@ The goal of this project is to create a web application that takes an image supp
 | [Curve Text (CUTE80)](https://github.com/Yuliang-Liu/Curve-Text-Detector) | The first public curved text dataset, images contain text with complex transformations and obstructions | 80 images, labelled via XML sheet | `{imageName, polygonPoints}` | 2014 |
 | [Total-Text](https://github.com/cs-chan/Total-Text-Dataset?tab=readme-ov-file) | Word-level based English curve text dataset, built on top of CUTE80 | - | - | 2017 - 2022 | 
 | [SCUT-CTW1500](https://github.com/Yuliang-Liu/Curve-Text-Detector/tree/master/data) | Text-line based dataset with both English and Chinese instances | 1,500 images, labelled via .txt file | - | 2017 - 2020 |
-
-
-
-
-
-
-
-
-
-
-
