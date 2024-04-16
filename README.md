@@ -13,25 +13,10 @@ American Dream's Senior Design Project Idea Proposal
 * The extracted text will be translated via an API of google translate, to which it would return that translation to the user. 
 
 # Research
-| Source | Image Number | Image Size | Date Published |
+| Source | Link | Summary | Relevance |
 | --- | --- |--- |---|
-| CUTE80 |    80    |  Varies  | 2014|
-### How Mask R-CNN Works?
-Link: https://developers.arcgis.com/python/guide/how-maskrcnn-works/  
-
-Summary:  
-Object instance segmentation integrates the task of object detection (detect an object along a specified bounding pox) and the task of segmentation, which classifies each pixel into a pre-defined category and creates a mask for parts of the given image to highlight specific features of it.  
-Mask R-CNN is an R-CNN (A region-based convolutional neural network) model for instance segmentation. It is built on top of another R-CNN model known as Faster R-CNN.  
-The first stage of Mask-RCNN contains a backbone (such as ResNet) and a region proposal network. They work to give an image a set of region proposals (regions in the feature map that contain the object we are looking for). These proposed regions can come in different sizes, which is a problem since the networks require a fixed-size vector to make predictions. We can fix these proposed regions by using the Rol pool or RolAlign method. However, RolSlign is used in Mask R-CNN since it helped preserve spatial information.  
-The second stage predicts a bounding box and object class for the proposed regions. This is also where we do the fixing of the proposed regions.  
-The third stage takes the output from the RolAlign layer and feeds it into a Mask head (this contains two convolutional layers). This will generate the mask for each region, thus segmenting the image.  
-Sometimes, the model is not so good at segmenting over irregular boundaries. A way to fix this is by using a point-based rendering neural network called PointRend. It is added onto Mask R-CNN, to turn it on all you have to do is set it to true.  
-
-## Translating the text of images
-
-Link: https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice.
-
-Summary: Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo. It splits the image into different segments and analyzes it part by part. In analysis, it applies an OCR to convert the photo before translating. OCR extracts text from an image and automatically translates that text. It is a popular tool used in Google Translates, Microsoft Translator, Text Fairy, Scan & Translate (Apple), and Prizmo.
+| How Mask R-CNN Works |   https://developers.arcgis.com/python/guide/how-maskrcnn-works/   |  Object instance segmentation integrates the task of object detection (detect an object along a specified bounding pox) and the task of segmentation, which classifies each pixel into a pre-defined category and creates a mask for parts of the given image to highlight specific features of it. Mask-RCNN is a popular model that is used for instance segmentation. In Mask-RCNN a proposal is made, to which a bounding box is made for that proposal, to which a mask for each region proposal is made.   | Mask-RCNN is a potential model that we can use for our project. We can use it to detect where in an image is text located.|
+| Translating the Test of Images |   [https://developers.arcgis.com/python/guide/how-maskrcnn-works/](https://www.alphatrad.com/news/how-translate-text-from-image#:~:text=Google%20Translate%3A%20uses%20image%20segmentation,the%20language%20of%20your%20choice)   |  Discusses the way photo translation works on most existing software. For example, google translate uses image segmentation to seperate the text from the image in a photo. It splits the image into different segments and analyzes it part by part. In analysis, it applies an OCR to convert the photo before translating. OCR extracts text from an image and automatically translates that text. It is a popular tool used in Google Translates, Microsoft Translator, Text Fairy, Scan & Translate (Apple), and Prizmo.   | Mask-RCNN is a potential model that we can use for our project. We can use it to detect where in an image is text located.|
 
 ## Text Detection, Recognition and Translation 
 
