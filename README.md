@@ -1,4 +1,4 @@
-# CSC 59866 - Senior Design I <br> American Dream
+# CSC 59866 - Senior Design II <br> American Dream
 
 # Team members
 | Name | Role | GitHub link |
