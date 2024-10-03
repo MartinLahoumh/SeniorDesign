@@ -1,4 +1,0 @@
-2024-09-29 19:14:54,565 - tensorflow - WARNING - From C:\Users\btjan\AppData\Roaming\Python\Python311\site-packages\keras\src\legacy\backend.py:666: The name tf.nn.ctc_loss is deprecated. Please use tf.compat.v1.nn.ctc_loss instead.
-
-2024-09-29 19:21:57,002 - tensorflow - WARNING - From C:\Users\btjan\AppData\Roaming\Python\Python311\site-packages\keras\src\backend\tensorflow\core.py:187: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
-
