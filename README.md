@@ -12,7 +12,9 @@
 
 The goal of this project is to create a web application that takes an image supplied by the user that contains text of a specified language, extracts it, and translates it to a user's preferred language (i.e. French, Spanish, Chinese, etc.) 
 * The machine learning aspect of this project is detecting where in an image is text located, to which that text is extracted.
-* The extracted text will be translated via a translation API, to which it would return that translation to the user on top of the supplied image. 
+* The extracted text will be translated via a translation API, to which it would return that translation to the user on top of the supplied image.
+
+![Usage example](./Example.png)
 
 # Previous work
 
@@ -84,7 +86,11 @@ For each dataset, we ran tests to determine information such as:
 
 # Data exploration visualization
 
-WIP
+![COCO data exploration](./Datasets/COCO_explore.png)
+![TextOCR data exploration](./Datasets/textOCR_explore.png)
+![ICDAR-2015 data exploration](./Datasets/icdar_explore.png)
+![Overall dataset text legibility exploration](./Datasets/legibility_explore.png)
+![Overall dataset text spelling exploration](./Datasets/spelling_explore.png)
 
 # Data mining and relationships
 
