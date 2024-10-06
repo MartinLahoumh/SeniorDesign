@@ -1,4 +1,5 @@
 dataset/
+/Model/EasyOCR/results/
 
 .csv
 Model/data.csv
