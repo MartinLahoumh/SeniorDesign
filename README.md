@@ -165,6 +165,8 @@ Recall is the ratio of correctly drawn annotation to the total number of ground 
 
 F1 score gives us a harmonic mean between precision and recall. The score is about 57.7%.
 
+## Using TextOCR
+
 ![Evaluation - TextOCR](./Model/eval-textocr.png)
 
 We used a larger subset for TextOCR, which itself is only a small fraction of the actual dataset. We can see that with more data, it performs much worse overall.
