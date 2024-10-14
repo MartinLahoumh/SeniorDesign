@@ -140,11 +140,73 @@ We have instead decided to use a pretrained model, which solves these issues. Ou
 
 # Model metrics
 
+![Overview - ICDAR-2015](./Model/over-icdar.png)
+![Overview - TextOCR](./Model/over-textocr.png)
+
+# Model evaluation
+
+To calculate precision, recall, and F1, we used Intersection over Union (IoU) scores, comparing the predicted bounding boxes to the closest ground truth boxes (provided in the dataset). When the boxes overlap, they produce a score between 0 and 1: the closer to 1, the better the overlap and accuracy.
+
+We used the following definitions:
+* TP:	IoU > 0.5
+* TN:	neither predicted box nor truth box exist (not needed or calculated)
+* FP:	IoU < 0.5 
+* FN:	predicted box and closest truth box do not intersect (IoU = 0)
+
+(source: [Measuring Labelling Quality with IOU and F1 Score, Isaac Tan](https://medium.com/supahands-techblog/measuring-labelling-quality-with-iou-and-f1-score-1717e29e492f))
+
+## Using ICDAR-2015
+
+![Evaluation - ICDAR-2015](./Model/eval-icdar.png)
+
+Precision is the ratio of correctly drawn annotations to the total number of drawn annotations. With every predicted bounding box, the model is about 55.75% correct in matching a truth bounding box.
+
+Recall is the ratio of correctly drawn annotation to the total number of ground truth annotation. With every truth bounding box, the model is about 60% correct in predicting a matching bounding box.
+
+F1 score gives us a harmonic mean between precision and recall. The score is about 57.7%.
+
+## Using TextOCR
+
+![Evaluation - TextOCR](./Model/eval-textocr.png)
+
+We used a larger subset for TextOCR, which itself is only a small fraction of the actual dataset. We can see that with more data, it performs much worse overall.
+
+Precision remains about the same, but recall, and F1 score as a result, takes a very big hit.
+
+There are a lot less matches when it comes to making bounding box predictions. While about a quarter of the predicted bounding boxes in ICDAR-2015 were incorrect, about half of the predictions are incorrect here.
+
+# Model observations
+
+**The very low accuracy is likely due to the high difficulty of the datasets.**
+
+The model does not perform well with image text that is transformed (rotated, warped, blurred, etc.) or uses an unorthodox font. Most images in the datasets are like this, hence the low average confidence and IoU scores. However, many existing translation apps aren’t typically expected to work with such images, so we don’t find it to be a major problem currently.
+
+EasyOCR does not have full support for detecting handwritten text as of now (which may explain the font issues), which may present problems when using the model in our application.
+
+# Translation
+
+We are considering using googletrans, which is not a Google API, but rather an unofficial Python wrapper for the Google Translate website. This allows us to use Google Translate services easily with our model without having to pay for a Google API key. It also has the ability to detect text and provide a confidence score.
+
+(source: [pypi - googletrans](https://pypi.org/project/googletrans/))
+
+# Frontend
+
+WIP
+
+# Backend
+
 WIP
 
 # Next steps
 
-WIP
+Our main next steps are:
+* Collect non-English image text datasets and more accuracy metrics to see the viability of EasyOCR’s multi language support
+* Model accuracy tests using our other (clearer!) datasets, including TextOCR
+* Integrate the model and API with our web application
+* User account system for application to view and favorite past translations
+  
+We are interested in also creating a mobile application using react-native. 
+
 
 
 
