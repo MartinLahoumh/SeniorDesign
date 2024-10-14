@@ -1,0 +1,126 @@
+.intro-container{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.intro-title{
+    font-family: "Dela Gothic One", sans-serif;
+    opacity: 1;
+    color:rgb(65, 65, 65);
+    font-size: 35px;
+    /*text-shadow: 3px 3px rgba(0, 0, 0, 0.187);*/
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.or-text{
+    margin:0;
+}
+
+.intro-title-2{
+    
+    font-size:20px;
+    margin-left: 150px;
+}
+
+.steps-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.step-box {
+    width: 300px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    border: double;
+    border-width: 15px;
+    box-shadow: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.step-box-2{
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.step-img {
+    width: 30%; 
+    height: auto; 
+    margin-bottom: 20px; 
+}
+
+.step-img-2{
+    width: 500px;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 10px 10px;
+}
+
+.step-img2{
+    width: 50%;
+}
+
+.step-title {
+    font-size: 22px;
+}
+
+.translate-container{
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    width: 20%;
+    height: 30px;
+    font-family: "Dela Gothic One", sans-serif;
+    opacity: 1;
+    color:rgb(65, 65, 65);
+    font-size: 35px;
+    border-style: solid;
+    border-width: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    background-color: rgb(244, 244, 244);
+    height: 35px;
+    border-style:solid;
+    border-radius: 10px;
+    font-family: "Dela Gothic One", sans-serif;
+    opacity: 1;
+    color:rgb(65, 65, 65);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.webcam{
+    width: 50%;
+    height: auto;
+    border-style: solid;
+    border-width: 5px;
+    margin-right: 10px;
+}
+
+.webcam-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}

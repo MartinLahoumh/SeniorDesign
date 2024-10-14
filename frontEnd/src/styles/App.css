@@ -1,0 +1,83 @@
+.dela-gothic-one-regular {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.app-body{
+    display: flex;
+    justify-content: center;
+}
+
+.app-body-comp{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ margin-top: 70px;
+ width: 100%;
+}
+
+.app-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    flex-direction: column;
+    width: 90%;
+}
+
+.left-flag{
+    width: 10%;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.right-flag{
+    width: 10%;
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flag{
+    width: 100%;
+}
+
+.app-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+    border-bottom-width: 5px;
+    width: 90%;
+    position: fixed;
+    top:0;
+}
+
+.logo-name{
+    font-family: "Dela Gothic One", sans-serif;
+    opacity: 1;
+    color:rgb(65, 65, 65);
+    font-size: 40px;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-img{
+    width: 100px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
