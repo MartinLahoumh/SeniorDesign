@@ -191,11 +191,22 @@ We are considering using googletrans, which is not a Google API, but rather an u
 
 # Frontend
 
-WIP
+We are using React for the frontend. There are 2 options on the main page: upload photo or capture a photo.
+
+![Frontend - main page](./front-main.png)
+
+The upload image option opens up the user's file system and allows them to choose a photo. 
+The ‘Take A Photo’ option, the user's webcam will open, allowing them to capture an image.
+
+Once the image has been selected or taken, the user is automatically redirected to the /translate page. 
+
+![Frontend - example page](./front-example.png)
 
 # Backend
 
-WIP
+For the backend, we decided to use Flask, as it is easy to work with and it is one that most of us have knowledge in. Additionally, we thought it will be easier to connect the model to it as they are both written in Python. 
+
+When a user uploads or captures a photo, that photo is sent to the /upload route in our backend. The image is then saved into the /images route and returned back to the frontend, so that their photo can be shown to them.
 
 # Next steps
 
