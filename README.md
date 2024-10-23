@@ -1,5 +1,7 @@
 # CSC 59866 - Senior Design II <br> American Dream
 
+https://docs.google.com/presentation/d/1U_KlSWkd2yuKI2U6xmYkMw8qTTpOj6mEVbDUPGTc0uE/edit#slide=id.g2a458d1c935_0_40
+
 # Team members
 | Name | Role | GitHub link |
 | - | - | - |
