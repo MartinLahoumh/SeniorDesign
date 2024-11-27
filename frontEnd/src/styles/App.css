@@ -50,16 +50,38 @@ align-items: center;
     width: 100%;
 }
 
-.app-header{
+.app-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* This ensures content on both ends, logo in middle */
     align-items: center;
     border-bottom: solid;
     border-bottom-width: 5px;
     width: 90%;
     position: fixed;
-    top:0;
+    top: 0;
 }
+
+.header-content {
+    display: flex;
+    justify-content: space-between;  /* Ensures the logo and profile/login are spaced */
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;  /* Allow the logo section to grow and center it within the flexbox */
+    text-align: center;
+
+}
+
+
+
+
+
+
 
 .logo-name{
     font-family: "Dela Gothic One", sans-serif;
@@ -75,9 +97,3 @@ align-items: center;
     width: 100px;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
