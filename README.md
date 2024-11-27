@@ -1,5 +1,7 @@
 # CSC 59866 - Senior Design II <br> American Dream
 
+https://docs.google.com/presentation/d/1U_KlSWkd2yuKI2U6xmYkMw8qTTpOj6mEVbDUPGTc0uE/edit#slide=id.g2a458d1c935_0_40
+
 # Team members
 | Name | Role | GitHub link |
 | - | - | - |
@@ -14,7 +16,7 @@ The goal of this project is to create a web application that takes an image supp
 * The machine learning aspect of this project is detecting where in an image is text located, to which that text is extracted.
 * The extracted text will be translated via a translation API, to which it would return that translation to the user on top of the supplied image.
 
-![Usage example](./Example.png)
+![Usage example](./images/Example.png)
 
 # Previous work
 
@@ -86,11 +88,11 @@ For each dataset, we ran tests to determine information such as:
 
 # Data exploration visualization
 
-![COCO data exploration](./Datasets/COCO_explore.png)
-![TextOCR data exploration](./Datasets/textOCR_explore.png)
-![ICDAR-2015 data exploration](./Datasets/icdar_explore.png)
-![Overall dataset text legibility exploration](./Datasets/legibility_explore.png)
-![Overall dataset text spelling exploration](./Datasets/spelling_explore.png)
+![COCO data exploration](./images/Datasets/COCO_explore.png)
+![TextOCR data exploration](./images/Datasets/textOCR_explore.png)
+![ICDAR-2015 data exploration](./images/Datasets/icdar_explore.png)
+![Overall dataset text legibility exploration](./images/Datasets/legibility_explore.png)
+![Overall dataset text spelling exploration](./images/Datasets/spelling_explore.png)
 
 # Data mining and relationships
 
@@ -191,11 +193,22 @@ We are considering using googletrans, which is not a Google API, but rather an u
 
 # Frontend
 
-WIP
+We are using React for the frontend. There are 2 options on the main page: upload photo or capture a photo.
+
+![Frontend - main page](./images/front-main.png)
+
+The upload image option opens up the user's file system and allows them to choose a photo. 
+The ‘Take A Photo’ option, the user's webcam will open, allowing them to capture an image.
+
+Once the image has been selected or taken, the user is automatically redirected to the /translate page. 
+
+![Frontend - example page](./images/front-example.png)
 
 # Backend
 
-WIP
+For the backend, we decided to use Flask, as it is easy to work with and it is one that most of us have knowledge in. Additionally, we thought it will be easier to connect the model to it as they are both written in Python. 
+
+When a user uploads or captures a photo, that photo is sent to the /upload route in our backend. The image is then saved into the /images route and returned back to the frontend, so that their photo can be shown to them.
 
 # Next steps
 
