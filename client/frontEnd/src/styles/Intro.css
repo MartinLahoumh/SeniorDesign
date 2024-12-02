@@ -71,6 +71,9 @@
     box-shadow: 10px 10px;
 }
 
+.step-img-3{
+    width: 400px;
+}
 .step-img2{
     width: 50%;
 }
@@ -79,9 +82,12 @@
     font-size: 22px;
 }
 
+
 .translate-container{
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .input-box{
@@ -123,4 +129,19 @@
     justify-content: center;
     align-items: center;
     padding-left: 100px;
+}
+
+.result-image-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+.result-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

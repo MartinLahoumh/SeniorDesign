@@ -2,6 +2,7 @@ import logo from './images/logo-img.png';
 import flag from './images/flag.png';
 import Intro from './components/Intro';
 import Translate from './components/Translate';
+import Result from './components/Result';
 import './styles/App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Intro />} />
             <Route path="/translate" element={<Translate />} />
+            <Route path="/result" element={<Result />} />
           </Routes>
         </Router>
       </div>
