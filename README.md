@@ -1,7 +1,5 @@
 # CSC 59866 - Senior Design II <br> American Dream
 
-https://docs.google.com/presentation/d/1U_KlSWkd2yuKI2U6xmYkMw8qTTpOj6mEVbDUPGTc0uE/edit#slide=id.g2a458d1c935_0_40
-
 # Team members
 | Name | Role | GitHub link |
 | - | - | - |
@@ -65,9 +63,28 @@ Should we finish our goal early, the following are additional features we may ad
 3. Add augmented reality (AR) support for the application to identify and translate signs with camera use
 </details>
 
+# Relevant papers
+
+| Name | Authors + date published | Summary | Takeaways for our project |
+| - | - | - | - |
+| [Character Region Awareness for Text Detection](https://arxiv.org/pdf/1904.01941) | 2019, Baek et al | Proposal of CRAFT text detection model. CNN that uses character-level text detection and character affinity to detect location of words in images. Trained with ICDARs and MSRATD500. | Text detection models for scene text struggle with accuracy due to word contexts and meanings. It is used in the OCR pipeline of EasyOCR, so it is the text detection model for this project. |
+| [What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis](https://arxiv.org/pdf/1904.01906) | 2019, Baek et al. | Training scene text recognition (STR) models are costly, making it difficult to obtain labeled data. The authors resort to using synthetic text datasets like MJSynth and SynthText. This brings up the question of whether performance improvements are due to the model itself or a better set of training data.  | Creating and training our own model from scratch would be infeasible due to a lack of datasets suited for scene text detection. This is why we believe that using a pre-trained OCR such as EasyOCR is necessary for the completion of this project given our time and knowledge limitations. |
+
+# Model
+
+Previously, we were considering using a TensorFlow model with CTC (Connectionist Temporal Classification). We decided to abandon this idea for a few reasons:
+* The model took far too long to feasibly train (~3 hours for 500 images) 
+* The model is difficult to use, and get metrics for training and validation
+* Our datasets are not suited for training, and thus produce an inaccurate model
+
+We have instead decided to use a pretrained model, which solves these issues. Our choice was **EasyOCR**, because:
+* It is a pretrained model, which solves our problems with model training
+* As the name suggests, it is easy to use. Getting bounding boxes and image text only takes a few lines
+* EasyOCR supports 80 input languages. This allows us to use different input languages in our translation application without needing several datasets for those languages in training
+
 # Datasets
 
-This section covers the main datasets we will be making use of for this project. We will be using these datasets for our model's testing and validation.
+This section covers the main datasets we will be making use of for this project. We will be using these datasets for our model's testing and evaluation.
 
 We chose these datasets because they are the easiest to use and are the most directly relevant for this project's purposes.
 
@@ -128,17 +145,6 @@ Even if data entries have recognizable text, it is not always correct:
 * It may contain misspellings, cut off words, etc. which may prove to be a problem for our model’s accuracy
 * It is also hard to detect such entries automatically
 
-# Model
-
-Previously, we were considering using a TensorFlow model with CTC (Connectionist Temporal Classification). We decided to abandon this idea for a few reasons:
-* The model took far too long to feasibly train (~3 hours for 500 images) 
-* The model is difficult to use, and get metrics for training and validation
-* Our datasets are not suited for training, and thus produce an inaccurate model
-
-We have instead decided to use a pretrained model, which solves these issues. Our choice was **EasyOCR**, because:
-* It is a pretrained model, which solves our problems with model training
-* As the name suggests, it is easy to use. Getting bounding boxes and image text only takes a few lines
-* EasyOCR supports 80 input languages. This allows us to use different input languages in our translation application without needing several datasets for those languages in training
 
 # Model metrics
 
@@ -212,14 +218,13 @@ When a user uploads or captures a photo, that photo is sent to the /upload route
 
 # Next steps
 
-Our main next steps are:
-* Collect non-English image text datasets and more accuracy metrics to see the viability of EasyOCR’s multi language support
-* Model accuracy tests using our other (clearer!) datasets, including TextOCR
-* Integrate the model and API with our web application
-* User account system for application to view and favorite past translations
-  
-We are interested in also creating a mobile application using react-native. 
+If we are to continue working on this project, we would address the problems and implement the features below:
 
+* Customize OCR model to recognize transformed text (rotation, shear, etc.)
+* Fix errors with recognizing or translating certain non-alphabetical languages
+* Overlaying text on image with proper text color and size
+* User account functionality to save past inferences
+* Mobile application interface
 
 
 
